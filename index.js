@@ -1,3 +1,3 @@
 module.exports = {
-  SharletPConsole: require("./structures/SharletPConsole.js")
-}
+  Console: require("./structures/SharletPConsole.js")
+};
