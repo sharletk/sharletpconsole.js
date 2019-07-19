@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/sharletp/SharletPConsole.js/issues"
   },
-  "homepage": "https://github.com/sharletp/SharletPConsole.js#readme"
+  "homepage": "https://github.com/sharletp/SharletPConsole.js#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
