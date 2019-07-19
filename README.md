@@ -9,7 +9,7 @@ Note: The following package has not been yet pushed to npm as I usually use this
 In order to install the package run..
 
 ```
-npm i github:sharletp/SharletPConsole.js
+npm i --save github:sharletp/SharletPConsole.js
 ```
 
 This will install the package to your modules folder.
@@ -17,17 +17,17 @@ This will install the package to your modules folder.
 Now in order for the package to function successfully, make sure you do include it in your code and create a instance of it.
 
 Eg.
-`
+```
 const SharletPConsole = require("sharletpconsole.js");
 
 const console = new SharletPConsole.Console();
-`
+```
 
 Or even a more fancier way of doing it...
-`
+```
 const { Console } = require("sharletpconsole.js");
 
 const console = new Console;
-`
+```
 
 Thats it, now use it like you would use the in-built console, except now its evem better & fancy!
