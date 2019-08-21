@@ -1,23 +1,33 @@
 const config = {
-  GLOBAL: {
-    time: (str) => `\x1B[90m${str}\x1B[0m`,
-        
-    LOG: {
-      message: (str) => `\x1B[92m${str}\x1B[0m`
+  /* #IMPORTANT NOTE#
+  
+  * DONT MESS WITH IT IF YOU DONT KNOW HOW TO!
+  
+  Make sure to set in the following values when writing the config's format (head & body) with the following data...
+   DONT MISS ANY DETAILS!!!
+   
+   ~head
+    - dataType
+    - timeStamp
+    - colors
+    
+   ~body
+    - data
+    - color   
+    
+ **EXAMPLE**
+  "format": {
+    colors: {
+      dataTypeColor: "BOLD_BRIGHT",
+      timeStampColor: "FG_DARK_GRAY"
     },
-      
-    WARN: {
-      message: (str) => `\x1B[93m${str}\x1B[0m`
-    },
-      
-    ERROR: {
-      message: (str) => `\x1B[91m${str}\x1B[0m`
-    },
-      
-    DEBUG: {
-      message: (str) => `\x1B[96m${str}\x1B[0m`
-    }
+    
+    head: (dataType, timeStamp, dataTypeColor, timeStampColor, resetColor) => `${dataTypeColor}[ ${dataType} ] ${resetColor}${timeStampColor}( ${timeStamp} ) ${resetColor}\n`,
+    
+    body: (data, baseColor, resetColor) => `>>> ${baseColor} ${data} ${resetColor}`
   }
+  
+  */
 };
 
 module.exports = config;
