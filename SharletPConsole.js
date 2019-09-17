@@ -5,6 +5,9 @@ const { Console } = require("console");
 const util = require("util");
 
 class SharletPConsole extends Console {
+  
+  /* eslint-disable no-unused-vars */
+  
   constructor(...args) {
     super({
       stdout: process.stdout,
@@ -20,6 +23,8 @@ class SharletPConsole extends Console {
         
     this.debugLevel = 0;
   }
+  
+  /* eslint-enable no-unused-vars */
   
   /**
    * Returns the set configuration.
@@ -157,9 +162,9 @@ class SharletPConsole extends Console {
       
     return def === false ? frmt["head"](dataType, this.timestamp, this.setColor(frmt["colors"]["dataTypeColor"]), this.setColor(frmt["colors"]["timeStampColor"]), this.setColor("RESET"))
     
-    :    
+      :    
     
-    `${this.setColor("BOLD_BRIGHT")}[ ${dataType} ]${this.setColor("RESET")} ${this.setColor("FG_DARK_GRAY")}( ${this.timestamp} )${this.setColor("RESET")}\n`;
+      `${this.setColor("BOLD_BRIGHT")}[ ${dataType} ]${this.setColor("RESET")} ${this.setColor("FG_DARK_GRAY")}( ${this.timestamp} )${this.setColor("RESET")}\n`;
   }
   
   /**
@@ -174,9 +179,9 @@ class SharletPConsole extends Console {
   bodyFormat(data, color, def = this.def) {
     return def === false ? this.config.format["body"](data, this.setColor(color), this.setColor("RESET"))
     
-    :
+      :
     
-    `>>> ${this.setColor(color)} ${data} ${this.setColor("RESET")}`;
+      `>>> ${this.setColor(color)} ${data} ${this.setColor("RESET")}`;
   }
   
   /**
@@ -187,21 +192,25 @@ class SharletPConsole extends Console {
    */
   
   _parseData(data) {
-    if(typeof data === "string") {
+    if (typeof data === "string") {
       return data;
-    } else if(Array.isArray(data)) {
+    } else if (Array.isArray(data)) {
       return data.map(this._parseData).join("\n");
-    } else if(typeof data === "object" && data !== null) {
+    } else if (typeof data === "object" && data !== null) {
       return util.inspect(data, {
         depth: 0,
         colors: true
-      })
-    } else if(typeof data === "Error") {
+      });
+    } else if (data && data.constructor === Error) {
       return data.stack || data.message || String(data);
     } else {
-      return "DATA PARSING ERROR!";
+      return this.error("Data Parsing Error!");
     }
+    /* eslint-disable no-unreachable */
+    
     return String(data);
+    
+    /* eslint-enable no-unreachable */
   }
   
   /**
