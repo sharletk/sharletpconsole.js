@@ -121,7 +121,7 @@ class SharletPConsole extends Console {
    * Returns the requested color from colors.
    * 
    * @param {string} color
-   * @return {}
+   * @return {integer}
    */
   
   setColor(color) {
@@ -154,7 +154,7 @@ class SharletPConsole extends Console {
    * @param {string} dataType
    * @param {string} color
    * @param {bool} def
-   * @return {}
+   * @return {object}
    */
   
   headFormat(dataType, color, def = this.def) {
@@ -173,7 +173,7 @@ class SharletPConsole extends Console {
    * @param {string} data
    * @param {string} color
    * @param {bool} def
-   * @return {}
+   * @return {object}
    */
   
   bodyFormat(data, color, def = this.def) {
