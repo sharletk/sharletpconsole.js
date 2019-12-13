@@ -1,10 +1,10 @@
 {
   "name": "sharletpconsole.js",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "SharletPConsole.js is a extended version of Console written in node.js.",
   "main": "./src/SharletPConsole.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" "
   },
   "repository": {
     "type": "git",
