@@ -1,6 +1,6 @@
 {
   "name": "sharletpconsole.js",
-  "version": "2.1.2",
+  "version": "2.1.1",
   "description": "SharletPConsole.js is a extended version of Console written in node.js.",
   "main": "./src/SharletPConsole.js",
   "scripts": {
