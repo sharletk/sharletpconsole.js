@@ -4,7 +4,7 @@
   "description": "SharletPConsole.js is a extended version of Console written in node.js.",
   "main": "./src/SharletPConsole.js",
   "scripts": {
-    "test": "node tests/index.js"
+    "test": "node ./tests/index.js"
   },
   "repository": {
     "type": "git",
