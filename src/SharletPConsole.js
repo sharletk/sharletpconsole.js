@@ -3,6 +3,7 @@
 const { Console } = require("console");
 
 const util = require("util");
+const timestamp = require("time-stamp");
 
 class SharletPConsole extends Console {
   
@@ -84,8 +85,8 @@ class SharletPConsole extends Console {
    * @return {string} timestamp
    */
   
-  get timestamp() {
-    return new Date().toISOString().replace("T", " ").substr(0, 19);
+  getTimestamp() {
+    return timestamp.utc("YYYY/MM/DD HH:mm:ss:ms");
   }
   
   /**
@@ -160,11 +161,11 @@ class SharletPConsole extends Console {
   headFormat(dataType, color, def = this.def) {
     let frmt = this.config.format;
       
-    return def === false ? frmt["head"](dataType, this.timestamp, this.setColor(frmt["colors"]["dataTypeColor"]), this.setColor(frmt["colors"]["timeStampColor"]), this.setColor("RESET"))
+    return def === false ? frmt["head"](dataType, this.getTimestamp(), this.setColor(frmt["colors"]["dataTypeColor"]), this.setColor(frmt["colors"]["timeStampColor"]), this.setColor("RESET"))
     
       :    
     
-      `${this.setColor("BOLD_BRIGHT")}[ ${dataType} ]${this.setColor("RESET")} ${this.setColor("FG_DARK_GRAY")}( ${this.timestamp} )${this.setColor("RESET")}\n`;
+      `${this.setColor("BOLD_BRIGHT")}[ ${dataType} ]${this.setColor("RESET")} ${this.setColor("FG_DARK_GRAY")}( ${this.getTimestamp()} )${this.setColor("RESET")}\n`;
   }
   
   /**
@@ -254,7 +255,7 @@ class SharletPConsole extends Console {
     this._writeLog(data, color, dataType);
   }
   
-  warning(data, color = "FG_LIGHT_YELLOW", dataType = "WARNING") {
+  warn(data, color = "FG_LIGHT_YELLOW", dataType = "WARNING") {
     this._writeLog(data, color, dataType);
   }
   
