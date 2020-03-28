@@ -86,7 +86,7 @@ class SharletPConsole extends Console {
    */
   
   getTimestamp() {
-    return timestamp.utc("YYYY/MM/DD HH:mm:ss:ms");
+    return timestamp.utc("YYYY/MM/DD HH:mm:ss");
   }
   
   /**
