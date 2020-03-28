@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: SharletPConsole.js Github Action
-      run: |
-        npm test
+    - run: npm install
+    - run: npm test
       env:
         CI: true
