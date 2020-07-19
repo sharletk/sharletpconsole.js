@@ -1,5 +1,5 @@
 # SharletPConsole.js
- ### CURRENT VERSION - 2.1.2 ###
+ ### CURRENT VERSION - 2.1.3 ###
  
 SharletPConsole.js is a extended version of Console with further extensions written in node.js.
 
