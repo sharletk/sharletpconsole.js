@@ -7,7 +7,7 @@
     "dev": "nodemon --config nodemon.json",
     "dev:debug": "nodemon --config nodemon.json --inspect-brk",
     
-    "build": "rm -rf types && tsc --build",
+    "build": "tsc --build",
     
     "test:logs": "ts-node ./tests/logs.ts"
   },
