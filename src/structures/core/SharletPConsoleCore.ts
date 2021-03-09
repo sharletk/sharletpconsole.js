@@ -33,7 +33,7 @@ export default class Logger extends Console {
   }
   
   public getTimestamp(): string {
-    return (timestamp as any).utc("YYYY/MM/DD HH:mm:ss")
+    return (timestamp as any).utc("YYYY/MM/DD-HH:mm:ss")
   }
   
   public isValidColor(color: string): boolean {        
@@ -68,13 +68,13 @@ export default class Logger extends Console {
   }
   
   private headFormat(datatype: string, color: string, title: string): string {
-    title = (typeof title === "undefined" ?process.title : title);
-         
-    return `${this.getFormattedColor("FG_DARK_GRAY")}${this.getTimestamp()}${this.getFormattedColor("RESET")} ${this.getFormattedColor("BOLD_BRIGHT")}[${this.getFormattedColor("FG_BLUE")}${title}${this.getFormattedColor("RESET")}${this.getFormattedColor("BOLD_BRIGHT")}]${this.getFormattedColor("RESET")} ${this.getFormattedColor("UNDERLINE")}#${this.getFormattedColor(color)}${datatype}${this.getFormattedColor("RESET")}\n`;
+    const c = (clr: string) => this.getFormattedColor(clr);  
+            
+    return `(${c("FG_DARK_GRAY")}${this.getTimestamp()}${c("RESET")}) ${c("BOLD_BRIGHT")}[${c("FG_BLUE")}${title}${c("RESET")}${c("BOLD_BRIGHT")}]${c("RESET")} #${c("UNDERLINE")}${c("BOLD_BRIGHT")}${this.getFormattedColor(color)}${datatype}${c("RESET")}:`;
   }
   
   private bodyFormat(data: string, color: string): string {
-    return `>>> ${this.getFormattedColor(color)}${data}${this.getFormattedColor("RESET")}`;
+    return `${this.getFormattedColor("RESET")}${data}`;
   }
   
   private _writeLog(data: string, color: string, datatype: string, title: string): void {
@@ -83,40 +83,46 @@ export default class Logger extends Console {
     super.log(`${this.headFormat(datatype, color, title)} ${this.bodyFormat(data, color)}`);
   }
   
-  log(data: string, title: string, color: string = "FG_LIGHT_GREEN", datatype: string = "LOG"): void {
+  log(data: string, title: string = process.title, color: string = "FG_LIGHT_GREEN", datatype: string = "LOG"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  info(data: string, title: string, color: string = "FG_WHITE", datatype: string = "INFO"): void {
+  info(data: string, title: string = process.title, color: string = "FG_WHITE", datatype: string = "INFO"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  notice(data: string, title: string, color: string = "FG_LIGHT_BLUE", datatype: string = "NOTICE"): void {
+  notice(data: string, title: string = process.title, color: string = "FG_LIGHT_CYAN", datatype: string = "NOTICE"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  warn(data: string, title: string, color: string = "FG_LIGHT_YELLOW", datatype: string = "WARN"): void {
+  warn(data: string, title: string = process.title, color: string = "FG_LIGHT_YELLOW", datatype: string = "WARN"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  alert(data: string, title: string, color: string = "FG_LIGHT_CYAN", datatype: string = "ALERT"): void {
+  alert(data: string, title: string = process.title, color: string = "FG_LIGHT_BLUE", datatype: string = "ALERT"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  critical(data: string, title: string, color: string = "FG_LIGHT_MAGENTA", datatype: string =  "CRITICAL"): void {
+  critical(data: string, title: string = process.title, color: string = "FG_LIGHT_MAGENTA", datatype: string =  "CRITICAL"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  emergency(data: string, title: string, color: string = "FG_RED", datatype: string = "EMERGENCY"): void {
+  emergency(data: string, title: string = process.title, color: string = "FG_RED", datatype: string = "EMERGENCY"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  error(data: string, title: string, color: string = "FG_LIGHT_RED", datatype: string = "ERROR"): void {
+  error(data: string, title: string = process.title, color: string = "FG_LIGHT_RED", datatype: string = "ERROR"): void {
     this._writeLog(data, color, datatype, title);
   }
   
-  debug(data: string, title: string, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG"): void {
-    if (!(this.debugLevel >= 1)) {
+  debug(data: string, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG"): void {
+    if (this.debugLevel >= 1) {
+      this._writeLog(data, color, datatype, title);
+   }
+  }
+  
+  debugX(data: string, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG-X"): void {
+    if (this.debugLevel >= 2) {
       this._writeLog(data, color, datatype, title);
    }
   }

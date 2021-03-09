@@ -1,4 +1,4 @@
-const ColorsConfig = {
+const ColorsConfig: object = {
     
   ESCAPE: "\x1B[%dm",
          
