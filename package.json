@@ -9,7 +9,7 @@
     
     "build": "rm -rf types && tsc --build",
     
-    "test:logs": "node build/tests/logs.js"
+    "test:logs": "ts-node ./tests/logs.ts"
   },
   "repository": {
     "type": "git",
