@@ -1,0 +1,30 @@
+{
+  "name": "sharletpconsole.js",
+  "version": "2.1.3",
+  "description": "SharletPConsole.js: A extended version of Node.js Console but with more fancy features!",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --config nodemon.json",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk",
+    "build": "rm -rf types && tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharletp/SharletPConsole.js.git"
+  },
+  "keywords": [
+    "node",
+    "console",
+    "fancy",
+    "sharletp",
+    "sharletpconsole",
+    "colors"
+  ],
+  "author": "SharletP",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/sharletp/SharletPConsole.js/issues"
+  },
+  "homepage": "https://github.com/sharletp/SharletPConsole.js#readme"
+}
