@@ -1,5 +1,3 @@
 import SharletPConsoleCore from "./structures/core/SharletPConsoleCore"
-const sharletpconsole = new SharletPConsoleCore();
-global.console = sharletpconsole;
-const console = sharletpconsole;
+const console = new SharletPConsoleCore();
 export default console;
