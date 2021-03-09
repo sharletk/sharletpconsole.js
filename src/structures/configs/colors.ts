@@ -1,3 +1,11 @@
+"use strict";
+
+/**
+ * Colors configuration.
+ * 
+ * @return {object}
+ */
+ 
 const ColorsConfig: object = {
     
   ESCAPE: "\x1B[%dm",
