@@ -3,11 +3,13 @@
   "version": "2.1.3",
   "description": "SharletPConsole.js: A extended version of Node.js Console but with more fancy features!",
   "main": "build/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": {    
     "dev": "nodemon --config nodemon.json",
     "dev:debug": "nodemon --config nodemon.json --inspect-brk",
-    "build": "rm -rf types && tsc --build"
+    
+    "build": "rm -rf types && tsc --build",
+    
+    "test:logs": "node build/tests/logs.js"
   },
   "repository": {
     "type": "git",
