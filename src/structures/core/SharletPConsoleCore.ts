@@ -1,3 +1,18 @@
+/**
+ *
+ *╭━━━┳╮╱╱╱╱╱╱╭╮╱╱╱╭╮╭━━━┳━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮
+ *┃╭━╮┃┃╱╱╱╱╱╱┃┃╱╱╭╯╰┫╭━╮┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱┃┃
+ *┃╰━━┫╰━┳━━┳━┫┃╭━┻╮╭┫╰━╯┃┃╱╰╋━━┳━╮╭━━┳━━┫┃╭━━╮
+ *╰━━╮┃╭╮┃╭╮┃╭┫┃┃┃━┫┃┃╭━━┫┃╱╭┫╭╮┃╭╮┫━━┫╭╮┃┃┃┃━┫
+ *┃╰━╯┃┃┃┃╭╮┃┃┃╰┫┃━┫╰┫┃╱╱┃╰━╯┃╰╯┃┃┃┣━━┃╰╯┃╰┫┃━┫
+ *╰━━━┻╯╰┻╯╰┻╯╰━┻━━┻━┻╯╱╱╰━━━┻━━┻╯╰┻━━┻━━┻━┻━━╯
+ *
+ * @author SharletP
+ * @file SharletPConsoleCore
+ * © All Rights Reserved
+ *
+ */
+
 "use strict";
 
 import { Console } from "console";
@@ -6,7 +21,7 @@ import timestamp from "time-stamp";
 
 import ColorConfig from "../configs/colors"
 
-export default class Logger extends Console {
+export default class SharletPConsoleCore extends Console {
   /* @param {any} configs */
   private configs: any;
   

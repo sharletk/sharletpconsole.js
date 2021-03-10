@@ -1,3 +1,17 @@
+/**
+ *
+ *╭━━━┳╮╱╱╱╱╱╱╭╮╱╱╱╭╮╭━━━┳━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮
+ *┃╭━╮┃┃╱╱╱╱╱╱┃┃╱╱╭╯╰┫╭━╮┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱┃┃
+ *┃╰━━┫╰━┳━━┳━┫┃╭━┻╮╭┫╰━╯┃┃╱╰╋━━┳━╮╭━━┳━━┫┃╭━━╮
+ *╰━━╮┃╭╮┃╭╮┃╭┫┃┃┃━┫┃┃╭━━┫┃╱╭┫╭╮┃╭╮┫━━┫╭╮┃┃┃┃━┫
+ *┃╰━╯┃┃┃┃╭╮┃┃┃╰┫┃━┫╰┫┃╱╱┃╰━╯┃╰╯┃┃┃┣━━┃╰╯┃╰┫┃━┫
+ *╰━━━┻╯╰┻╯╰┻╯╰━┻━━┻━┻╯╱╱╰━━━┻━━┻╯╰┻━━┻━━┻━┻━━╯
+ *
+ * @author SharletP
+ * @file SharletPConsoleCore
+ * © All Rights Reserved
+ *
+ */
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -7,7 +21,7 @@ const console_1 = require("console");
 const util_1 = __importDefault(require("util"));
 const time_stamp_1 = __importDefault(require("time-stamp"));
 const colors_1 = __importDefault(require("../configs/colors"));
-class Logger extends console_1.Console {
+class SharletPConsoleCore extends console_1.Console {
     constructor() {
         super(process.stdout, process.stderr, true);
         this.configs = {
@@ -262,4 +276,4 @@ class Logger extends console_1.Console {
         }
     }
 }
-exports.default = Logger;
+exports.default = SharletPConsoleCore;
