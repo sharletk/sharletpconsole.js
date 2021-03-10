@@ -99,5 +99,5 @@ Project Link: https://github.com/sharletp/sharletpconsole.js
 ## Conclusion
 I had created this for the sake of simplicity by using pre-made custom console methods and additional features in my projects. Feel free to use it as you'd like to in your own projects and if you do like it, leave a star to show the appreciation.
 
-Best wishes,
-God bless!
+Best wishes,<br>
+God bless! 😄
