@@ -73,7 +73,7 @@ export default class SharletPConsoleCore extends Console {
     /**
      * Format the head section of the log output.
      *
-     * @param {string} datatype
+     * @param {any} datatype
      * @param {string} color
      * @param {string} title
      * @return {string}
@@ -82,7 +82,7 @@ export default class SharletPConsoleCore extends Console {
     /**
      * Format the body section of the log output.
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} color
      * @return {string}
      */
@@ -90,9 +90,9 @@ export default class SharletPConsoleCore extends Console {
     /**
      * Log the new formatted output.
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @param {string} title
      * @return {void}
      */
@@ -100,101 +100,101 @@ export default class SharletPConsoleCore extends Console {
     /**
      * Custom Console: Log Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    log(data: string, title?: string, color?: string, datatype?: string): void;
+    log(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Info Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    info(data: string, title?: string, color?: string, datatype?: string): void;
+    info(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Notice Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    notice(data: string, title?: string, color?: string, datatype?: string): void;
+    notice(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Warn Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    warn(data: string, title?: string, color?: string, datatype?: string): void;
+    warn(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Alert Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    alert(data: string, title?: string, color?: string, datatype?: string): void;
+    alert(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Critical Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    critical(data: string, title?: string, color?: string, datatype?: string): void;
+    critical(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Emergency Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    emergency(data: string, title?: string, color?: string, datatype?: string): void;
+    emergency(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Error Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    error(data: string, title?: string, color?: string, datatype?: string): void;
+    error(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Debug Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    debug(data: string, title?: string, color?: string, datatype?: string): void;
+    debug(data: any, title?: string, color?: string, datatype?: string): void;
     /**
      * Custom Console: Debug-X Method
      *
-     * @param {string} data
+     * @param {any} data
      * @param {string} title
      * @param {string} color
-     * @param {string} datatype
+     * @param {any} datatype
      * @return {void}
      */
-    debugX(data: string, title?: string, color?: string, datatype?: string): void;
+    debugX(data: any, title?: string, color?: string, datatype?: string): void;
 }

@@ -141,7 +141,7 @@ export default class SharletPConsoleCore extends Console {
   /**
    * Format the head section of the log output.
    *
-   * @param {string} datatype
+   * @param {any} datatype
    * @param {string} color
    * @param {string} title
    * @return {string}
@@ -156,26 +156,26 @@ export default class SharletPConsoleCore extends Console {
   /**
    * Format the body section of the log output.
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} color
    * @return {string}
    */
   
-  private bodyFormat(data: string, color: string): string {
+  private bodyFormat(data: any, color: string): string {
     return `${this.getFormattedColor("RESET")}${data}`;
   }
   
   /**
    * Log the new formatted output.
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @param {string} title
    * @return {void}
    */
   
-  private _writeLog(data: string, color: string, datatype: string, title: string): void {
+  private _writeLog(data: any, color: string, datatype: string, title: string): void {
     data = this._parseData(data);
     
     super.log(`${this.headFormat(datatype, color, title)} ${this.bodyFormat(data, color)}`);
@@ -184,126 +184,126 @@ export default class SharletPConsoleCore extends Console {
   /**
    * Custom Console: Log Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  log(data: string, title: string = process.title, color: string = "FG_LIGHT_GREEN", datatype: string = "LOG"): void {
+  log(data: any, title: string = process.title, color: string = "FG_LIGHT_GREEN", datatype: string = "LOG"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Info Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  info(data: string, title: string = process.title, color: string = "FG_WHITE", datatype: string = "INFO"): void {
+  info(data: any, title: string = process.title, color: string = "FG_WHITE", datatype: string = "INFO"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Notice Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  notice(data: string, title: string = process.title, color: string = "FG_LIGHT_CYAN", datatype: string = "NOTICE"): void {
+  notice(data: any, title: string = process.title, color: string = "FG_LIGHT_CYAN", datatype: string = "NOTICE"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Warn Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  warn(data: string, title: string = process.title, color: string = "FG_LIGHT_YELLOW", datatype: string = "WARN"): void {
+  warn(data: any, title: string = process.title, color: string = "FG_LIGHT_YELLOW", datatype: string = "WARN"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Alert Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  alert(data: string, title: string = process.title, color: string = "FG_LIGHT_BLUE", datatype: string = "ALERT"): void {
+  alert(data: any, title: string = process.title, color: string = "FG_LIGHT_BLUE", datatype: string = "ALERT"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Critical Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  critical(data: string, title: string = process.title, color: string = "FG_LIGHT_MAGENTA", datatype: string =  "CRITICAL"): void {
+  critical(data: any, title: string = process.title, color: string = "FG_LIGHT_MAGENTA", datatype: string =  "CRITICAL"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Emergency Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  emergency(data: string, title: string = process.title, color: string = "FG_RED", datatype: string = "EMERGENCY"): void {
+  emergency(data: any, title: string = process.title, color: string = "FG_RED", datatype: string = "EMERGENCY"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Error Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  error(data: string, title: string = process.title, color: string = "FG_LIGHT_RED", datatype: string = "ERROR"): void {
+  error(data: any, title: string = process.title, color: string = "FG_LIGHT_RED", datatype: string = "ERROR"): void {
     this._writeLog(data, color, datatype, title);
   }
   
   /**
    * Custom Console: Debug Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  debug(data: string, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG"): void {
+  debug(data: any, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG"): void {
     if (this.debugLevel >= 1) {
       this._writeLog(data, color, datatype, title);
    }
@@ -312,14 +312,14 @@ export default class SharletPConsoleCore extends Console {
   /**
    * Custom Console: Debug-X Method
    *
-   * @param {string} data
+   * @param {any} data
    * @param {string} title
    * @param {string} color
-   * @param {string} datatype
+   * @param {any} datatype
    * @return {void}
    */
   
-  debugX(data: string, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG-X"): void {
+  debugX(data: any, title: string = process.title, color: string = "FG_DARK_GRAY", datatype: string = "DEBUG-X"): void {
     if (this.debugLevel >= 2) {
       this._writeLog(data, color, datatype, title);
    }
