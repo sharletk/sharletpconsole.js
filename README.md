@@ -26,7 +26,7 @@ A extended version of Node.js Console but with more fancy features!<br>
 1. Inside of a javascript codebase.
 2. Inside of a typescript codebase that uses typescript native compiler to transcompile as javascript.
 
-If you ever try to run it with the use of `ts-node`, there will be alot of errors encountered.
+If you ever try to run it with the use of `ts-node`, there will be alot of compile time errors.
 
 *If you ever have any idea on how to fix this, please feel free to make a pull request on the master branch, thank you very much!*
 
@@ -48,12 +48,12 @@ If you ever try to run it with the use of `ts-node`, there will be alot of error
 There are two ways which you can install:
 1. Install using NPM (Recommended)
 ```shell
-npm i sharletpconsole.js@v3.0.0 --save
+npm install sharletpconsole.js@v3.0.0 --save
 ```
 
 2. Install from github
 ```shell
-npm i github:sharletp/sharletpconsole.js#v3.0.0 --save
+npm install github:sharletp/sharletpconsole.js#v3.0.0 --save
 ```
 
 ### Installation
