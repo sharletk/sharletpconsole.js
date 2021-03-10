@@ -13,6 +13,8 @@
 # SharletPConsole.js
 A extended version of Node.js Console but with more fancy features!
 
+![Console Log Example](https://github.com/sharletp/sharletpconsole.js/blob/master/.github/images/console_log_example.jpg "Console Log Example")
+
 ## Table of Contents
 1. [Requirements](https://github.com/sharletp/sharletpconsole.js#requirements)
 2. [Getting Started](https://github.com/sharletp/sharletpconsole.js#getting-started)
