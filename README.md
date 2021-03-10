@@ -80,7 +80,7 @@ If you would like to contribute, please do so by creating a pull request for the
 ```
 ```
 
-Distributed under the **GNU General Public Licence v3.0**. See `LICENCE` for more information.
+Distributed under the **GNU Lesser General Public Licence v3.0**. See `LICENCE` for more information.
 
 ## Contact
 Name - SharletP<br>
