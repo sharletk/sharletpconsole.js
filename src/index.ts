@@ -15,8 +15,6 @@
  
 "use strict";
 
-//declare var global: any;
-
 import SharletPConsoleCore from "./structures/core/SharletPConsoleCore"
 const sharletpconsole = new SharletPConsoleCore();
 global.console = sharletpconsole;

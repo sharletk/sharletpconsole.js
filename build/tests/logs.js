@@ -15,7 +15,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const index_1 = require("../src/index");
-global.console = index_1.sharletpconsole;
 index_1.sharletpconsole.log("Log Test");
 index_1.sharletpconsole.notice("Notice Test");
 index_1.sharletpconsole.info("Info Test");

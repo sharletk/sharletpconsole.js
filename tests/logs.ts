@@ -16,7 +16,6 @@
 "use strict";
 
 import { sharletpconsole as console } from "../src/index";
-global.console = console;
 
 console.log("Log Test");
 console.notice("Notice Test");
