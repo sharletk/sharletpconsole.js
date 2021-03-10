@@ -1,6 +1,6 @@
 {
   "name": "sharletpconsole.js",
-  "version": "3.0.0-pre",
+  "version": "2.9.9",
   "description": "SharletPConsole.js: A extended version of Node.js Console but with more fancy features!",
   "main": "build/src/index.js",
   "scripts": {
