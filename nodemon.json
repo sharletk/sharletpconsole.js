@@ -3,5 +3,5 @@
   "ignore": [".git", ".github", "node_modules/", "dist/", "coverage/", "types/"], 
   "watch": ["src/", "tests/"],    
   "ext": "js,json,ts",
-  "exec": "ts-node ./src/index.ts && ts-node ./tests/logs.ts"
+  "exec": "tsc --build && node build/src/index.js && node build/tests/logs.js "
 }
