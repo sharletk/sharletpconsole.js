@@ -15,7 +15,8 @@
 <a href="https://david-dm.org/alanshaw/david-www/?type=dev"><img src="https://david-dm.org/sharletp/sharletpconsole.js/dev-status.svg" alt="devDependency Status"></a>
 
 # SharletPConsole.js
-A extended version of Node.js Console but with more fancy features!
+A extended version of Node.js Console but with more fancy features!<br>
+**Version**: 3.0.0-0
 
 ![Console Log Example](https://github.com/sharletp/sharletpconsole.js/blob/master/.github/images/console_log_example.jpg "Console Log Example")
 
