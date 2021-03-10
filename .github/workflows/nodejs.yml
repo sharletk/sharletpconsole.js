@@ -1,6 +1,7 @@
-name: SharletPConsole.js Node CI
-
-on: [push]
+name: Node CI
+author: SharletP
+description: Github Actions for sharletpconsole.js
+on: [push, pull_request]
 
 jobs:
   build:
@@ -9,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [12.x, 14.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -17,12 +18,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: SharletPConsole.js: Lint
+        
+    - name: Lint
       run: |
         npm install -g eslint && eslint .
       env:
         CI: true
-    - name: SharletPConsole.js: Test #Logs
+        
+    - name: Test Logs
       run: |
         npm install -g ts-node && npm run test:logs
       env:
