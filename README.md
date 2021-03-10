@@ -31,7 +31,7 @@ npm i sharletpconsole.js@3.0.0-pre --save
 
 2. Install from github
 ```shell
-npm i github:sharletp/sharletpconsole.js#stable --save
+npm i github:sharletp/sharletpconsole.js#3.0.0-pre --save
 ```
 
 ### Installation
