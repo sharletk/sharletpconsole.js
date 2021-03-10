@@ -1,6 +1,4 @@
 name: Node CI
-author: SharletP
-description: Github Actions for sharletpconsole.js
 on: [push, pull_request]
 
 jobs:
