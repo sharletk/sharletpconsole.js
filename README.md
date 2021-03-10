@@ -7,6 +7,7 @@
 ```
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+![Node CI](https://github.com/sharletp/sharletpconsole.js/actions/workflows/nodejs.yml/badge.svg)
 <a href="https://david-dm.org/alanshaw/david-www"><img src="https://david-dm.org/sharletp/sharletpconsole.js.svg" alt="Dependency Status"></a>
 <a href="https://david-dm.org/alanshaw/david-www/?type=dev"><img src="https://david-dm.org/sharletp/sharletpconsole.js/dev-status.svg" alt="devDependency Status"></a>
 
