@@ -14,14 +14,14 @@
 A extended version of Node.js Console but with more fancy features!
 
 ## Table of Contents
-1. Requirements
-2. Getting Started
-3. Usage
-4. Roadmap
-5. Contributing
-6. Licence
-7. Contact
-8. Conclusion
+1. [Requirements](https://github.com/sharletp/sharletpconsole.js#requirements)
+2. [Getting Started](https://github.com/sharletp/sharletpconsole.js#getting-started)
+3. [Usage](https://github.com/sharletp/sharletpconsole.js#usage)
+4. [Roadmap](https://github.com/sharletp/sharletpconsole.js#roadmap)
+5. [Contributing](https://github.com/sharletp/sharletpconsole.js#contributing)
+6. [Licence](https://github.com/sharletp/sharletpconsole.js#licence)
+7. [Contact](https://github.com/sharletp/sharletpconsole.js#contact)
+8. [Conclusion](https://github.com/sharletp/sharletpconsole.js#conclusion)
 
 ## Requirements
 * Node.js `v12.x` or higher
