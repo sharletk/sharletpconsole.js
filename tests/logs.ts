@@ -6,6 +6,7 @@ console.warn("Warn Test");
 console.alert("Alert Test");
 console.critical("Critical Test");
 console.emergency("Emergency Test");
+console.error("Error Test", "HOUSTON, WE HAVE A PROBLEM")
 
 console.setDebugLevel(1);
 console.debug("Debug Test", "SharletP");
