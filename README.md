@@ -59,7 +59,7 @@ For typescript due to some complexities, you have to follow this.
  
   All of the associated log methods follows this syntax:
     
-    Eg: `console.log(data, [options])`
+    Eg: console.log(data, [options])
 
   * `data` - Any: Data to be logged.
   * `title` - String: Process title of the current log. **Default: process.title**
@@ -78,9 +78,15 @@ If you would like to contribute, please do so by creating a pull request for the
 
 ## Licence
 ```
+Version 3, 29 June 2007
+Copyright © 2007 Free Software Foundation, Inc. <http://fsf.org/>
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This version of the GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed below.
 ```
 
-Distributed under the **GNU Lesser General Public Licence v3.0**. See `LICENCE` for more information.
+Distributed under the **GNU Lesser General Public Licence v3.0**.<br>See `LICENCE` for more information.
 
 ## Contact
 Name - SharletP<br>
