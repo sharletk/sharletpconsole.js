@@ -1,28 +1,106 @@
+```╭━━━┳╮╱╱╱╱╱╱╭╮╱╱╱╭╮╭━━━┳━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮
+┃╭━╮┃┃╱╱╱╱╱╱┃┃╱╱╭╯╰┫╭━╮┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱┃┃
+┃╰━━┫╰━┳━━┳━┫┃╭━┻╮╭┫╰━╯┃┃╱╰╋━━┳━╮╭━━┳━━┫┃╭━━╮
+╰━━╮┃╭╮┃╭╮┃╭┫┃┃┃━┫┃┃╭━━┫┃╱╭┫╭╮┃╭╮┫━━┫╭╮┃┃┃┃━┫
+┃╰━╯┃┃┃┃╭╮┃┃┃╰┫┃━┫╰┫┃╱╱┃╰━╯┃╰╯┃┃┃┣━━┃╰╯┃╰┫┃━┫
+╰━━━┻╯╰┻╯╰┻╯╰━┻━━┻━┻╯╱╱╰━━━┻━━┻╯╰┻━━┻━━┻━┻━━╯
+```
+
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+
+
 # SharletPConsole.js
- ### CURRENT VERSION - 2.1.3 ###
+A extended version of Node.js Console but with more fancy features!
+
+## Table of Contents
+1. Requirements
+2. Getting Started
+3. Usage
+4. Roadmap
+5. Contributing
+6. Licence
+7. Contact
+8. Conclusion
+
+## Requirements
+* Node.js `v12.x` or higher
+
+## Getting Started
+### Prerequisites
+There are two ways which you can install:
+1. Install using NPM (Recommended)
+```shell
+npm i sharletpconsole.js@3.0.0-pre --save
+```
+
+2. Install from github
+```shell
+npm i github:sharletp/sharletpconsole.js#3.0.0-pre --save
+```
+
+### Installation
+Depending on whether you are using **javascript** or **typescript** below are the solutions:
+* ### Javascript
+```javascript
+const sharletpconsole = require("sharletpconsole.js");
+console.log("Hello world!");
+```
+
+Internally for javascript the console is automatically replaced with sharletpconsole when you do import it, making it super easy to get started with.
+***
+* ### Typescript
+```typescript
+import { sharletpconsole as console } from "sharletpconsole.js"
+global.console = console
+
+console.log("Hello world");
+```
+
+For typescript due to some complexities, you have to follow this.
+
+## Usage
+1. **Different Premade Console Methods**
  
-SharletPConsole.js is a extended version of Console with further extensions written in node.js.
+  All of the associated log methods follows this syntax:
+    
+    Eg: console.log(data, [options])
 
-For now it has basic features and minimal functions due to it being a personal project, more will be evantually added in the near future.
+  * `data` - Any: Data to be logged.
+  * `title` - String: Process title of the current log. **Default: process.title**
+  * `color` - String: Color of the log datatype. **Default: In-built color**
+  * `datatype` - String: The type of log. **Default: Relative to the method used.**
 
-# How to install and use?
-Note: The following package has not been yet pushed to npm as I usually use this for my own projects and install it from github.
+  The different types of log methods used are: `log, notice, info, warn, alert, critical, emergency, error, debug, debugX`
 
-In order to install the package run..
+## Roadmap
+1. ~~Different premade console log methods~~
+2. File logging system
+3. Easy custom log format creation.
 
+## Contributing
+If you would like to contribute, please do so by creating a pull request for the specific version from the master branch.
+
+## Licence
 ```
-npm i --save github:sharletp/SharletPConsole.js
+Version 3, 29 June 2007
+Copyright © 2007 Free Software Foundation, Inc. <http://fsf.org/>
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This version of the GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed below.
 ```
 
-This will install the package to your modules folder.
+Distributed under the **GNU Lesser General Public Licence v3.0**.<br>See `LICENCE` for more information.
 
-Now in order for the package to function successfully, make sure you do include it in your code and create a instance of it.
+## Contact
+Name - SharletP<br>
+Email: sharletman@gmail.com<br>
+Discord: SharletP#2928
 
-Eg.
-```
-const SharletPConsole = require("sharletpconsole.js");
+Project Link: https://github.com/sharletp/sharletpconsole.js
 
-const console = new SharletPConsole();
-```
+## Conclusion
+I had created this for the sake of simplicity by using pre-made custom console methods and additional features in my projects. Feel free to use it as you'd like to in your own projects and if you do like it, leave a star to show the appreciation.
 
-Thats it, now use it like you would use the in-built console, except now its even better & fancy!
+Best wishes,
+God bless!
