@@ -6,7 +6,7 @@
 ╰━━━┻╯╰┻╯╰┻╯╰━┻━━┻━┻╯╱╱╰━━━┻━━┻╯╰┻━━┻━━┻━┻━━╯
 ```
 # SharletPConsole.js
-SharletPConsole.js: A extended version of Node.js Console but with more fancy features!
+A extended version of Node.js Console but with more fancy features!
 
 ## Table of Contents
 1. Requirements
