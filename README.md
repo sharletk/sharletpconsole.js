@@ -82,14 +82,7 @@ For typescript due to some complexities, you have to follow this.
 If you would like to contribute, please do so by creating a pull request for the specific version from the master branch.
 
 ## Licence
-```
-Version 3, 29 June 2007
-Copyright © 2007 Free Software Foundation, Inc. <http://fsf.org/>
-
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-
-This version of the GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed below.
-```
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsharletp%2Fsharletpconsole.js.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsharletp%2Fsharletpconsole.js?ref=badge_large)
 
 Distributed under the **GNU Lesser General Public Licence v3.0**.<br>See `LICENCE` for more information.
 
