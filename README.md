@@ -24,7 +24,7 @@ A extended version of Node.js Console but with more fancy features!<br>
 
 **Please Note:** Due to some internal issues which I am not able to figure out, you can only use this package under certain circumstances:
 1. Inside of a javascript codebase.
-2. Inside of a typescript codebase that uses typescript native compiler to transcompile as javadcript.
+2. Inside of a typescript codebase that uses typescript native compiler to transcompile as javascript.
 
 If you ever try to run it with the use of `ts-node`, there will be alot of errors encountered.
 
@@ -57,6 +57,8 @@ npm i github:sharletp/sharletpconsole.js#v3.0.0 --save
 ```
 
 ### Installation
+**Please Note:** The package internally sets itself as the global console whenever imported/required, please be adviced.
+
 Depending on whether you are using **javascript** or **typescript** below are the solutions:
 * ### Javascript
 ```javascript
