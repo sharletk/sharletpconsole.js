@@ -25,6 +25,6 @@ jobs:
         
     - name: Test Logs
       run: |
-        npm install -g ts-node && npm run test:logs
+        npm install -g ts-node typescript && npm run test:logs
       env:
         CI: true
