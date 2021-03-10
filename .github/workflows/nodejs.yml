@@ -1,4 +1,4 @@
-name: SharletPConsole.js: Node CI
+name: SharletPConsole.js Node CI
 
 on: [push]
 
