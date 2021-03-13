@@ -16,7 +16,7 @@
 
 # SharletPConsole.js
 A extended version of Node.js Console but with more fancy features!<br>
-**Version**: v3.0.0
+**Version**: v3.0.1
 
 ![Console Log Example](https://github.com/sharletp/sharletpconsole.js/blob/master/.github/images/console_log_example.jpg "Console Log Example")
 
@@ -48,12 +48,12 @@ If you ever try to run it with the use of `ts-node`, there will be alot of compi
 There are two ways which you can install:
 1. Install using NPM (Recommended)
 ```shell
-npm install sharletpconsole.js@v3.0.0 --save
+npm install sharletpconsole.js@v3.0.1 --save
 ```
 
 2. Install from github
 ```shell
-npm install github:sharletp/sharletpconsole.js#v3.0.0 --save
+npm install github:sharletp/sharletpconsole.js#v3.0.1 --save
 ```
 
 ### Installation
